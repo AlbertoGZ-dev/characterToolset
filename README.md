@@ -1,7 +1,7 @@
 # Character Toolset
 characterToolset is a tool to automatize some repetitive tasks in character preparation Maya scene for CrimsonSky.
 
-<img src="https://github.com/AlbertoGZ-dev/characterToolset/blob/main/characterToolset.png"></img>
+<img src="https://github.com/AlbertoGZ-dev/characterToolset/blob/main/characterToolset.jpg"></img>
 
 ## Setup
 
