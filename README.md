@@ -1,7 +1,7 @@
 # Character Toolset
-characterToolset is a tool to automatize alembic exports for BWater pipeline on demand requests.
+characterToolset is a tool to automatize some repetitive tasks in character preparation Maya scene for CrimsonSky.
 
-<img src="https://github.com/AlbertoGZ-dev/alembicExporter/blob/main/alembicExporter.png"></img>
+<img src="https://github.com/AlbertoGZ-dev/characterToolset/blob/main/characterToolset.png"></img>
 
 ## Setup
 
