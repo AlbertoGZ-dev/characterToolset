@@ -145,7 +145,7 @@ class characterToolset(QtWidgets.QMainWindow):
         # Viewport Subdiv button
         self.viewportSubdivBtn = QtWidgets.QPushButton('Viewport Subdiv to 0')
         self.viewportSubdivBtn.clicked.connect(self.setViewportSubdiv)
-        self.viewportSubdivBtn.setFixedWidth(200)
+        self.viewportSubdivBtn.setFixedWidth(250)
         self.viewportSubdivBtn.setStyleSheet('background-color:' + lightblue)
 
         # Arnold Subdiv button
@@ -156,7 +156,7 @@ class characterToolset(QtWidgets.QMainWindow):
         self.subdivValue = QtWidgets.QSpinBox()
         self.subdivValue.setValue(2)
         self.subdivValue.setStyleSheet('background-color:' + lightblue)
-        self.subdivValue.setFixedHeight(22)
+        #self.subdivValue.setFixedHeight(22)
 
 
         ## SHADING
@@ -200,7 +200,7 @@ class characterToolset(QtWidgets.QMainWindow):
         # Lambert button
         self.lambertBtn = QtWidgets.QPushButton('Lambert Mat')
         self.lambertBtn.clicked.connect(self.setLambertMat)
-        self.lambertBtn.setFixedWidth(200)
+        self.lambertBtn.setFixedWidth(300)
         self.lambertBtn.setStyleSheet('background-color:' + lightpurple)
 
         # Remove Unused Materials
@@ -233,7 +233,7 @@ class characterToolset(QtWidgets.QMainWindow):
         # Hide Default Views button
         self.hideViewsBtn = QtWidgets.QPushButton('Hide views')
         self.hideViewsBtn.clicked.connect(self.hideViews)
-        self.hideViewsBtn.setFixedWidth(200)
+        self.hideViewsBtn.setFixedWidth(250)
         self.hideViewsBtn.setStyleSheet('background-color:' + lightgreen)
 
         # Hide Default Sets button
@@ -531,8 +531,10 @@ class characterToolset(QtWidgets.QMainWindow):
 
         
     def selectNoneMesh(self):
+        meshSelected = []
         self.meshQList.clearSelection()
-        del meshSelected[:]
+        if meshSelected != []:
+            del meshSelected[:]
         
 
     def selectAllFile(self):
@@ -540,8 +542,10 @@ class characterToolset(QtWidgets.QMainWindow):
        
    
     def selectNoneFile(self):
+        fileSelected = []
         self.fileQList.clearSelection()
-        del fileSelected[:]
+        if fileSelected != []:
+            del fileSelected[:]
        
 
      
